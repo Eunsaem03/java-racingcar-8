@@ -6,7 +6,7 @@ public class NameValidator {
 
     private NameValidator() {}
 
-    public static void validate(List<String> names) {
+    public static List<String> validate(List<String> names) {
         if (names.isEmpty()) {
             throw new IllegalArgumentException("한 글자 이상 이름을 입력해야 합니다.");
         }
@@ -24,6 +24,8 @@ public class NameValidator {
                 throw new IllegalArgumentException("빈 이름은 허용되지 않습니다.");
             }
         }
+
+        return names;
     }
 
 
