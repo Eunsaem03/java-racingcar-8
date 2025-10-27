@@ -20,7 +20,7 @@ public class MoveAction {
 
         for (String name : names) {
             int position = positions.get(name);
-            System.out.println(name + " : " + " - ".repeat(position));
+            System.out.println(name + " : " + "-".repeat(position));
         }
         System.out.println();
     }
