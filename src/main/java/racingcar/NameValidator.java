@@ -16,7 +16,7 @@ public class NameValidator {
                 throw new IllegalArgumentException("5자 이하로만 이름 부여가 가능합니다.");
             }
 
-            if (name.matches("[a-zA-Z]+")) {
+            if (!name.matches("[a-zA-Z]+")) {
                 throw new IllegalArgumentException("영문자만 입력 가능합니다.");
             }
 
